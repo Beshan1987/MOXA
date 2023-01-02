@@ -1,0 +1,22 @@
+@media (max-width: 1000px) {
+	.header__wrap .header__nav {
+		flex: 0 1 70%;
+	}
+	.header__wrap .header__nav .header__nav-list {
+		flex: 0 1 70%;
+	}
+	.main {
+		background: linear-gradient(
+				rgba(255, 255, 255, 0.4),
+				rgba(255, 255, 255, 0.4)
+			),
+			url(./img/bg_main.png) no-repeat right;
+		background-size: contain;
+	}
+}
+
+@media (max-width: 700px) {
+	.header__wrap .header__nav {
+		display: none;
+	}
+}

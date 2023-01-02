@@ -1,0 +1,30 @@
+%font {
+	font-family: "Bai Jamjuree";
+	font-style: normal;
+	font-weight: 400;
+}
+
+@mixin font_propeties($font-size, $line-height) {
+	font-size: $font-size;
+	line-height: $line-height;
+}
+
+@mixin flex($flow, $align-item, $justify-content) {
+	display: flex;
+	flex-flow: $flow;
+	align-items: $align-item;
+	justify-content: $justify-content;
+}
+
+%hover_link {
+	opacity: 0.7;
+	transition: 0.3s;
+	cursor: pointer;
+	color: rgba(42, 46, 43, 0.692);
+}
+
+%hover_icon {
+	opacity: 0.7;
+	transition: 0.3s;
+	cursor: pointer;
+}

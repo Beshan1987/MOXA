@@ -1,0 +1,267 @@
+@charset "UTF-8";
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Убираем внутренние отступы */
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+/* Убираем внешние отступы */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+  color: #161513;
+}
+
+/* Выставляем основные настройки по-умолчанию для body */
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* Удаляем стандартную стилизацию для всех ul и il, у которых есть атрибут class*/
+ul[class],
+ol[class] {
+  list-style: none;
+}
+
+/* Элементы a, у которых нет класса, сбрасываем до дефолтных стилей */
+a:not([class]) {
+  -webkit-text-decoration-skip: ink;
+  text-decoration-skip-ink: auto;
+}
+
+/* Упрощаем работу с изображениями */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Указываем понятную периодичность в потоке данных у article*/
+article > * + * {
+  margin-top: 1em;
+}
+
+/* Наследуем шрифты для инпутов и кнопок */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #161513;
+}
+
+/* Удаляем все анимации и переходы для людей, которые предпочитай их не использовать */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    -webkit-animation-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+    -webkit-animation-iteration-count: 1 !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+} /*# sourceMappingURL=reset.css.map */
+/* bai-jamjuree-regular - latin */
+@font-face {
+  font-family: "Bai Jamjuree";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../style/fonts/bai-jamjuree-v11-latin-regular.eot"); /* IE9 Compat Modes */
+  src: local(""), url("../style/fonts/bai-jamjuree-v11-latin-regular.eot?#iefix") format("embedded-opentype"), url("../style/fonts/bai-jamjuree-v11-latin-regular.woff2") format("woff2"), url("../style/fonts/bai-jamjuree-v11-latin-regular.woff") format("woff"), url("../style/fonts/bai-jamjuree-v11-latin-regular.ttf") format("truetype"), url("../style/fonts/bai-jamjuree-v11-latin-regular.svg#BaiJamjuree") format("svg"); /* Legacy iOS */
+}
+.content {
+  font-family: "Bai Jamjuree";
+  font-style: normal;
+  font-weight: 400;
+}
+
+.header__wrap .header__nav .header__nav-list .header__nav-item:hover {
+  opacity: 0.7;
+  transition: 0.3s;
+  cursor: pointer;
+  color: rgba(42, 46, 43, 0.692);
+}
+
+.main .main_container .main_bts > * :hover, .header__wrap .header__nav .header__nav-item-bt:hover, .header__wrap .header__wrap-img .header__img:last-child:hover {
+  opacity: 0.7;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.content {
+  background: #f5f5f5;
+}
+
+._container {
+  width: 1060px;
+  margin: 0 auto;
+  height: 100%;
+  padding: 0 5px;
+  width: 100%;
+}
+
+.container_header {
+  width: 1440px;
+  margin: 0 auto;
+  height: 100%;
+  padding: 0 5.5555555556%;
+  width: 100%;
+}
+
+.header__wrap {
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 25px 0;
+  margin-bottom: 2.7777777778%;
+}
+.header__wrap .header__wrap-img {
+  flex: 0 1 30%;
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+  justify-content: stretch;
+}
+.header__wrap .header__wrap-img .header__img:last-child {
+  padding-left: 10px;
+}
+.header__wrap .header__nav {
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+  justify-content: space-between;
+  flex: 0 1 60%;
+  font-size: calc(12px + 0.3vw);
+  line-height: 150%;
+}
+.header__wrap .header__nav .header__nav-list {
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+  justify-content: space-between;
+  flex: 0 1 30%;
+}
+.header__wrap .header__nav .header__nav-list .header__nav-item {
+  transition: 0.5s;
+  border-bottom: 1px solid #252524;
+}
+.header__wrap .header__nav .header__nav-list .header__nav-item:hover {
+  border-bottom: 1px solid #161513;
+}
+.header__wrap .header__nav .header__nav-item-bt {
+  width: 16.40625%;
+  padding: 8px 0;
+}
+.main {
+  display: flex;
+  flex-flow: column;
+  align-items: stretch;
+  justify-content: stretch;
+  background: url(./img/bg_main.png) no-repeat right;
+  background-size: contain;
+  letter-spacing: 0.56px;
+}
+.main .main_container {
+  display: flex;
+  flex-flow: column;
+  align-items: stretch;
+  justify-content: stretch;
+  font-size: calc(25px + 1.6vw);
+  line-height: 114.2857142857%;
+  padding: 7.2916666667%;
+}
+.main .main_container > * {
+  margin-bottom: 4px;
+}
+.main .main_container > *:last-child {
+  margin-bottom: 0;
+}
+.main .main_container .main_title {
+  font-size: inherit;
+}
+.main .main_container .main_sub-wrap {
+  display: flex;
+  flex-flow: row;
+  align-items: stretch;
+  justify-content: stretch;
+  flex-wrap: wrap;
+}
+.main .main_container .main_sub-wrap .main_sub-img {
+  padding: 0 0.8333333333%;
+}
+.main .main_container .main_sub-features {
+  display: flex;
+  flex-flow: row;
+  align-items: stretch;
+  justify-content: stretch;
+  font-size: calc(15px + 0.6vw);
+  line-height: 139.1304347826%;
+  padding-top: 2.4305555556%;
+  flex-wrap: wrap;
+}
+.main .main_container .main_sub-features .main_sub-img {
+  padding: 0 10px;
+}
+.main .main_container .main_bts {
+  display: flex;
+  flex-flow: row;
+  align-items: stretch;
+  justify-content: stretch;
+  font-size: calc(12px + 0.3vw);
+  line-height: 150%;
+  padding-top: 2.7777777778%;
+}
+.main .main_container .main_bts > * {
+  padding: 13px 33px;
+}
+.main .main_container .main_bts .main_bt-wrap:first-child {
+  background-color: #161513;
+}
+.main .main_container .main_bts .main_bt-wrap:first-child .main_bt-item {
+  color: #ffffff;
+}
+
+@media (max-width: 1000px) {
+  .header__wrap .header__nav {
+    flex: 0 1 70%;
+  }
+  .header__wrap .header__nav .header__nav-list {
+    flex: 0 1 70%;
+  }
+  .main {
+    background: linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4)), url(./img/bg_main.png) no-repeat right;
+    background-size: contain;
+  }
+}
+@media (max-width: 700px) {
+  .header__wrap .header__nav {
+    display: none;
+  }
+}/*# sourceMappingURL=style.css.map */

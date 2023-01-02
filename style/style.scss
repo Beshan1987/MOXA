@@ -1,0 +1,120 @@
+@import "reset";
+@import "fonts";
+@import "variables";
+
+.content {
+	background: #f5f5f5;
+	@extend %font;
+}
+
+._container {
+	width: 1060px;
+	margin: 0 auto;
+	height: 100%;
+	padding: 0 5px;
+	width: 100%;
+}
+
+.container_header {
+	width: 1440px;
+	margin: 0 auto;
+	height: 100%;
+	padding: 0 calc(80 / 1440 * 100%);
+	width: 100%;
+}
+
+.header__wrap {
+	@include flex(row, center, space-between);
+	padding: 25px 0;
+	margin-bottom: calc(40 / 1440 * 100%);
+	.header__wrap-img {
+		flex: 0 1 30%;
+		@include flex(row, center, stretch);
+		.header__img:last-child {
+			padding-left: 10px;
+			&:hover {
+				@extend %hover_icon;
+			}
+		}
+	}
+	.header__nav {
+		@include flex(row, center, space-between);
+		flex: 0 1 60%;
+		@include font_propeties(calc(12px + 0.3vw), calc(24 / 16 * 100%));
+		.header__nav-list {
+			@include flex(row, center, space-between);
+			flex: 0 1 30%;
+			.header__nav-item {
+				transition: 0.5s;
+				border-bottom: 1px solid #252524;
+				&:hover {
+					@extend %hover_link;
+					border-bottom: 1px solid #161513;
+				}
+			}
+		}
+		.header__nav-item-bt {
+			width: calc(126 / ((1440 - 160) * 0.6) * 100%);
+			padding: 8px 0;
+			&:hover {
+				@extend %hover_icon;
+			}
+		}
+	}
+}
+
+.main {
+	@include flex(column, stretch, stretch);
+	background: url(./img/bg_main.png) no-repeat right;
+	background-size: contain;
+	letter-spacing: 0.56px;
+
+	.main_container {
+		@include flex(column, stretch, stretch);
+		@include font_propeties(calc(25px + 1.6vw), calc(64 / 56 * 100%));
+		padding: calc(105 / 1440 * 100%);
+		> * {
+			margin-bottom: 4px;
+		}
+		> *:last-child {
+			margin-bottom: 0;
+		}
+		.main_title {
+			font-size: inherit;
+		}
+		.main_sub-wrap {
+			@include flex(row, stretch, stretch);
+			flex-wrap: wrap;
+			.main_sub-img {
+				padding: 0 calc(12 / 1440 * 100%);
+			}
+		}
+		.main_sub-features {
+			@include flex(row, stretch, stretch);
+			@include font_propeties(calc(15px + 0.6vw), calc(32 / 23 * 100%));
+			padding-top: calc(35 / 1440 * 100%);
+			flex-wrap: wrap;
+			.main_sub-img {
+				padding: 0 10px;
+			}
+		}
+		.main_bts {
+			@include flex(row, stretch, stretch);
+			@include font_propeties(calc(12px + 0.3vw), calc(24 / 16 * 100%));
+			padding-top: calc(40 / 1440 * 100%);
+			> * {
+				padding: 13px 33px;
+				:hover {
+					@extend %hover_icon;
+				}
+			}
+			.main_bt-wrap:first-child {
+				background-color: #161513;
+				.main_bt-item {
+					color: #ffffff;
+				}
+			}
+		}
+	}
+}
+@import "media";

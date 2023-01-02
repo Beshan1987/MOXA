@@ -1,0 +1,8 @@
+/* bai-jamjuree-regular - latin */
+@font-face {
+  font-family: "Bai Jamjuree";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../style/fonts/bai-jamjuree-v11-latin-regular.eot"); /* IE9 Compat Modes */
+  src: local(""), url("../style/fonts/bai-jamjuree-v11-latin-regular.eot?#iefix") format("embedded-opentype"), url("../style/fonts/bai-jamjuree-v11-latin-regular.woff2") format("woff2"), url("../style/fonts/bai-jamjuree-v11-latin-regular.woff") format("woff"), url("../style/fonts/bai-jamjuree-v11-latin-regular.ttf") format("truetype"), url("../style/fonts/bai-jamjuree-v11-latin-regular.svg#BaiJamjuree") format("svg"); /* Legacy iOS */
+}/*# sourceMappingURL=fonts.css.map */
