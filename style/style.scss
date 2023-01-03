@@ -164,17 +164,17 @@
 
 	.history__main-item:first-child {
 		@include flex(column, stretch, stretch);
-		flex: 0 1 calc(350 / 1060 * 100%);
+		flex: 0 1 calc(380 / 1060 * 100%);
 		.history__main-wrap {
 			@include flex(row, center, stretch);
 			@include font_propeties(calc(12px + 0.8vw), calc(32 / 23 * 100%));
-			margin-bottom: calc(21 / 350 * 100%);
+			margin-bottom: calc(21 / 380 * 100%);
 			.history__star {
 				padding: 0 10px;
 			}
 		}
 		.history__description {
-			@include font_propeties(calc(26px + 2vw), calc(64 / 56 * 100%));
+			@include font_propeties(calc(30px + 1.5vw), calc(64 / 56 * 100%));
 			letter-spacing: 0.56px;
 			font-weight: 400;
 		}

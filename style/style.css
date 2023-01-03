@@ -320,7 +320,7 @@ a {
   flex-flow: column;
   align-items: stretch;
   justify-content: stretch;
-  flex: 0 1 33.0188679245%;
+  flex: 0 1 35.8490566038%;
 }
 .history__main-list .history__main-item:first-child .history__main-wrap {
   display: flex;
@@ -329,13 +329,13 @@ a {
   justify-content: stretch;
   font-size: calc(12px + 0.8vw);
   line-height: 139.1304347826%;
-  margin-bottom: 6%;
+  margin-bottom: 5.5263157895%;
 }
 .history__main-list .history__main-item:first-child .history__main-wrap .history__star {
   padding: 0 10px;
 }
 .history__main-list .history__main-item:first-child .history__description {
-  font-size: calc(26px + 2vw);
+  font-size: calc(30px + 1.5vw);
   line-height: 114.2857142857%;
   letter-spacing: 0.56px;
   font-weight: 400;
