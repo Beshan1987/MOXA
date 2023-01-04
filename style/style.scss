@@ -60,6 +60,7 @@
 			border-radius: 0;
 			border: 1px solid #161513;
 			color: #161513;
+			background: none;
 			&:hover {
 				@extend %hover_icon;
 			}
@@ -113,6 +114,7 @@
 				border-radius: 0;
 				border: 1px solid #161513;
 				color: #161513;
+				background: none;
 				&:hover {
 					@extend %hover_icon;
 				}

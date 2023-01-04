@@ -190,6 +190,7 @@ a {
   border-radius: 0;
   border: 1px solid #161513;
   color: #161513;
+  background: none;
 }
 .main {
   display: flex;
@@ -257,6 +258,7 @@ a {
   border-radius: 0;
   border: 1px solid #161513;
   color: #161513;
+  background: none;
 }
 .main .main_container .main_bts .main_bt-wrap:first-child {
   background-color: #161513;
