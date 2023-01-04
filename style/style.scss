@@ -119,6 +119,7 @@
 .main__features {
 	padding-top: calc(50 / 1440 * 100%);
 	padding-bottom: calc(200 / 1440 * 100%);
+	overflow: hidden;
 }
 .main__features-list {
 	background: #161513;
