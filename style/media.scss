@@ -66,4 +66,16 @@
 			transform: translateX(-235vw);
 		}
 	}
+	.services__main {
+		.services__main-list {
+			grid-template-columns: repeat(1, 1fr);
+			row-gap: 0;
+			> div {
+				margin-bottom: 10px;
+			}
+			div:last-child {
+				margin-bottom: 0;
+			}
+		}
+	}
 }
