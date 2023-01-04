@@ -580,8 +580,12 @@ a {
     flex: 0 1 70%;
   }
   .main {
-    background: linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4)), url(./img/bg_main.png) no-repeat right;
+    background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url(./img/bg_main.png) no-repeat right;
     background-size: contain;
+  }
+  .header {
+    background-color: rgb(255, 255, 255);
+    padding-bottom: 20px;
   }
 }
 @media (max-width: 700px) {
