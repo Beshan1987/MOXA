@@ -28,3 +28,10 @@
 	transition: 0.3s;
 	cursor: pointer;
 }
+
+%adapt {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	object-fit: cover;
+}

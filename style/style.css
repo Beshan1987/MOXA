@@ -101,7 +101,7 @@ a {
   font-weight: 400;
 }
 
-.main__features-list .main__features-item .main__features-item-link:hover, .header__wrap .header__nav .header__nav-list .header__nav-item:hover {
+.portfolio__main-list .portfolio-item .portfolio-discription .portfolio-link:hover, .main__features-list .main__features-item .main__features-item-link:hover, .header__wrap .header__nav .header__nav-list .header__nav-item:hover {
   opacity: 0.7;
   transition: 0.3s;
   cursor: pointer;
@@ -112,6 +112,14 @@ a {
   opacity: 0.7;
   transition: 0.3s;
   cursor: pointer;
+}
+
+.portfolio__main-list .portfolio-item .portfolio-img-wrap .portfolio-img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .content {
@@ -451,7 +459,7 @@ a {
   display: grid;
   grid-template-rows: repeat(1, 1fr);
 }
-.awards__list div {
+.awards__list > div {
   margin-bottom: 2.2641509434%;
 }
 .awards__list div:last-child {
@@ -511,6 +519,58 @@ a {
   margin-right: 5.4054054054%;
 }
 
+.portfolio__main-list {
+  display: flex;
+  flex-flow: column;
+  align-items: stretch;
+  justify-content: space-between;
+}
+.portfolio__main-list .portfolio-item {
+  display: flex;
+  flex-flow: row;
+  align-items: stretch;
+  justify-content: space-between;
+  margin-bottom: 9.0566037736%;
+}
+.portfolio__main-list .portfolio-item:last-child {
+  margin-bottom: 0;
+}
+.portfolio__main-list .portfolio-item:nth-child(2n) {
+  flex-direction: row-reverse;
+}
+.portfolio__main-list .portfolio-item .portfolio-img-wrap {
+  flex: 0 1 43.3962264151%;
+  position: relative;
+  padding-bottom: 28.9622641509%;
+}
+.portfolio__main-list .portfolio-item .portfolio-discription {
+  display: flex;
+  flex-flow: column;
+  align-items: start;
+  justify-content: space-evenly;
+  flex: 0 1 48.7735849057%;
+  letter-spacing: 1.44px;
+  color: #161513;
+}
+.portfolio__main-list .portfolio-item .portfolio-discription .portfolio-prof {
+  display: inline;
+  background: #e94d35;
+  padding: 0.9671179884% 2.3210831721%;
+  text-transform: uppercase;
+  font-size: calc(9px + 0.6vw);
+  line-height: 177.7777777778%;
+  color: #ffffff;
+}
+.portfolio__main-list .portfolio-item .portfolio-discription .portfolio-feature {
+  font-size: calc(20px + 1.7vw);
+  line-height: 124.4444444444%;
+  font-weight: 400;
+}
+.portfolio__main-list .portfolio-item .portfolio-discription .portfolio-link {
+  color: #161513;
+  font-size: calc(10px + 0.7vw);
+  line-height: 160%;
+}
 @media (max-width: 1000px) {
   .header__wrap .header__nav {
     flex: 0 1 70%;
