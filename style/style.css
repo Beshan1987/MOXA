@@ -450,7 +450,12 @@ a {
 .awards__list {
   display: grid;
   grid-template-rows: repeat(1, 1fr);
-  row-gap: 2.2641509434%;
+}
+.awards__list div {
+  margin-bottom: 2.2641509434%;
+}
+.awards__list div:last-child {
+  margin-bottom: 0;
 }
 .awards__list .awards__item-wrap {
   display: flex;
