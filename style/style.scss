@@ -386,6 +386,10 @@
 		.services__feature {
 			@include font_propeties(calc(9px + 0.6vw), calc(32 / 18 * 100%));
 		}
+		#services__direction {
+			@include font_propeties(calc(15px + 1.2vw), calc(40 / 31 * 100%));
+			font-weight: 400;
+		}
 	}
 }
 

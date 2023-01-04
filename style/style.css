@@ -608,6 +608,11 @@ a {
   font-size: calc(9px + 0.6vw);
   line-height: 177.7777777778%;
 }
+.services__main-list .services__main-item #services__direction {
+  font-size: calc(15px + 1.2vw);
+  line-height: 129.0322580645%;
+  font-weight: 400;
+}
 
 @media (max-width: 1000px) {
   .header__wrap .header__nav {
