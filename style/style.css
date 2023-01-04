@@ -270,7 +270,7 @@ a {
   overflow: hidden;
   width: 210vw;
   transform: rotate(-4.93deg);
-  margin-left: -10px;
+  margin-left: -15px;
   position: relative;
 }
 .main__features-list:hover .main__features-item {
@@ -477,6 +477,7 @@ a {
   margin-right: 6.0759493671%;
   font-size: calc(14px + 0.2vw);
   line-height: 177.7777777778%;
+  color: #ffffff;
 }
 .awards__list .awards__item-wrap .awards__item .awards__team-wrap {
   display: flex;

@@ -136,7 +136,7 @@
 	overflow: hidden;
 	width: 210vw;
 	transform: rotate(-4.93deg);
-	margin-left: -10px;
+	margin-left: -15px;
 	position: relative;
 	&:hover .main__features-item {
 		animation-play-state: paused;
@@ -279,6 +279,7 @@
 				background: #e94d35;
 				margin-right: calc(24 / 395 * 100%);
 				@include font_propeties(calc(14px + 0.2vw), calc(32 / 18 * 100%));
+				color: #ffffff;
 			}
 			.awards__team-wrap {
 				@include flex(column, stretch, stretch);
