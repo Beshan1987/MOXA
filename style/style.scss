@@ -101,6 +101,7 @@
 			@include flex(row, stretch, stretch);
 			@include font_propeties(calc(12px + 0.3vw), calc(24 / 16 * 100%));
 			padding-top: calc(40 / 1440 * 100%);
+			color: #ffffff;
 			> * {
 				padding: 13px 33px;
 				:hover {
@@ -109,9 +110,7 @@
 			}
 			.main_bt-wrap:first-child {
 				background-color: #161513;
-				.main_bt-item {
-					color: #ffffff;
-				}
+				color: #ffffff;
 			}
 		}
 	}
@@ -136,7 +135,7 @@
 		flex: 1 1 auto;
 		animation: news 30s infinite linear;
 		min-width: 10vw;
-		.main__features-feature {
+		.main__features-item-link {
 			color: #ffffff;
 			padding-right: 10px;
 			@include font_propeties(calc(5px + 0.8vw), calc(24 / 8 * 100%));

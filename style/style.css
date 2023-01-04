@@ -236,14 +236,13 @@ a {
   font-size: calc(12px + 0.3vw);
   line-height: 150%;
   padding-top: 2.7777777778%;
+  color: #ffffff;
 }
 .main .main_container .main_bts > * {
   padding: 13px 33px;
 }
 .main .main_container .main_bts .main_bt-wrap:first-child {
   background-color: #161513;
-}
-.main .main_container .main_bts .main_bt-wrap:first-child .main_bt-item {
   color: #ffffff;
 }
 
@@ -276,7 +275,7 @@ a {
           animation: news 30s infinite linear;
   min-width: 10vw;
 }
-.main__features-list .main__features-item .main__features-feature {
+.main__features-list .main__features-item .main__features-item-link {
   color: #ffffff;
   padding-right: 10px;
   font-size: calc(5px + 0.8vw);
