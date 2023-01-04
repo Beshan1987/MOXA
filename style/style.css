@@ -256,6 +256,7 @@ a {
   transition: 0.3s;
   border-radius: 0;
   border: 1px solid #161513;
+  color: #161513;
 }
 .main .main_container .main_bts .main_bt-wrap:first-child {
   background-color: #161513;
