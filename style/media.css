@@ -14,4 +14,13 @@
   .header__wrap .header__nav {
     display: none;
   }
+  .main__features-list .main__features-item {
+    min-width: 35vw;
+  }
+  .history__main-list {
+    flex-wrap: wrap;
+  }
+  .history__main-list .history__main-item {
+    min-width: 300px;
+  }
 }/*# sourceMappingURL=media.css.map */
