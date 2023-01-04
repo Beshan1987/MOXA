@@ -40,6 +40,7 @@
 	.header__nav {
 		@include flex(row, center, space-between);
 		flex: 0 1 60%;
+		color: #161513;
 		@include font_propeties(calc(8px + 0.7vw), calc(24 / 16 * 100%));
 		.header__nav-list {
 			@include flex(row, center, space-between);
@@ -58,6 +59,7 @@
 			padding: 8px 0;
 			border-radius: 0;
 			border: 1px solid #161513;
+			color: #161513;
 			&:hover {
 				@extend %hover_icon;
 			}
@@ -104,7 +106,7 @@
 			@include flex(row, stretch, stretch);
 			@include font_propeties(calc(12px + 0.3vw), calc(24 / 16 * 100%));
 			padding-top: calc(40 / 1440 * 100%);
-			color: #ffffff;
+			color: #161513;
 			> * {
 				padding: calc(13 / 1060 * 100%) calc(33 / 1060 * 100%);
 				transition: 0.3s;
